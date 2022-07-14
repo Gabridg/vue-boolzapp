@@ -1,0 +1,44 @@
+body {
+    background-color: #dcdbd2;
+    height: 80vh;
+}
+
+header {
+    background-color: #009688;
+    height: 20vh;
+}
+
+main {
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    right: 100px;
+    bottom: 20px;
+}
+
+#user-view {
+    width: 30%;
+}
+
+#view-header {
+    height: 80px;
+}
+
+#message-notice {
+    background-color: #8edafc;
+    height: 50px;
+    width: 100%;
+}
+
+.fa-bell {
+    color: #8edafc;
+    height: 100%;
+    background-color: #fff;
+}
+
+.fa-solid {
+    color: #b1b1b1;
+    font-size: 20px;
+    padding: 0 5px;
+}
