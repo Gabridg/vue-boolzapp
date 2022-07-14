@@ -1,4 +1,4 @@
-body {
+#bg-section {
     background-color: #dcdbd2;
     height: 80vh;
 }
@@ -21,8 +21,20 @@ main {
     width: 30%;
 }
 
+#user-name img {
+    height: 50px;
+}
+
+#user-name {
+    margin-left: 15px;
+}
+
+#user-interaction {
+    margin-right: 10px;
+}
+
 #view-header {
-    height: 80px;
+    height: 10vh;
 }
 
 #message-notice {
@@ -35,6 +47,7 @@ main {
     color: #b1b1b1;
     font-size: 20px;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .fa-bell-slash {
@@ -46,10 +59,11 @@ main {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin-left: 5px;
+    margin-left: 15px;
     line-height: 40px;
     text-align: center;
 }
+
 
 a {
     color: #b1b1b1;
@@ -74,4 +88,60 @@ a {
 .input-group {
     padding: 5px 15px;
     background-color: #cccccc;
+}
+
+.contact-list {
+    overflow-y: scroll;
+    height: 75vh;
+}
+
+.contact {
+    height: 100px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.contact img {
+    height: 75px;
+}
+
+#user-messages {
+    width: 80%;
+}
+
+#message-header {
+    height: 10vh;
+    background-color: #eaeaea;
+}
+
+.access-time {
+    font-size: 15px;
+    color: #666;
+}
+
+.contact-info {
+    height: 50px;
+    line-height: 0px;
+}
+
+#message-view {
+    height: 86vh;
+    background-image: url('../img/mine.jpg');
+}
+
+#chat {
+    height: 80vh;
+}
+
+#mic {
+    background-color: #cccccc;
+}
+
+.fa-microphone {
+    color: #666;
+}
+
+.chat-mex {
+    height: 55px;
 }

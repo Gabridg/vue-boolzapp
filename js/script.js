@@ -16,28 +16,32 @@ Consigli Utili:
 non dimentichiamo di fare analisi sia per la struttura dati che per la grafica
 procediamo a blocchettoni per evitare di avere poi problemi col CSS in fase avanzata
 Cerchiamo di rispettare tutti i principi e le best practices viste finora (nomi di variabili e classi, centralizzazione ecc)
+`
 */
-const data = {
-    user: {
-        name: 'Nome Utente',
-        avatar: '_io'
-    },
-    contacts: [
-        {
-            name: 'Michele',
-            avatar: '_1',
+const data = new Vue({
+    el: '#root',
+    data: {
+        user: {
+            name: 'Nome Utente',
+            avatar: '_io'
         },
-        {
-            name: 'Fabio',
-            avatar: '_2',
-        },
-        {
-            name: 'Samuele',
-            avatar: '_3',
-        },
-        {
-            name: 'Luisa',
-            avatar: '_4',
-        },
-    ]
-}
+        contacts: [
+            {
+                name: 'Michele',
+                avatar: 'img/avatar_1.jpg',
+            },
+            {
+                name: 'Fabio',
+                avatar: 'img/avatar_2.jpg',
+            },
+            {
+                name: 'Samuele',
+                avatar: 'img/avatar_3.jpg',
+            },
+            {
+                name: 'Luisa',
+                avatar: 'img/avatar_4.jpg',
+            },
+        ]
+    }
+})
