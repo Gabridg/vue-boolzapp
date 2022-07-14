@@ -31,14 +31,47 @@ main {
     width: 100%;
 }
 
-.fa-bell {
-    color: #8edafc;
-    height: 100%;
-    background-color: #fff;
-}
-
 .fa-solid {
     color: #b1b1b1;
     font-size: 20px;
-    padding: 0 5px;
+    margin: 0 5px;
+}
+
+.fa-bell-slash {
+    color: #8edafc;
+}
+
+#ring-bell {
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    line-height: 40px;
+    text-align: center;
+}
+
+a {
+    color: #b1b1b1;
+}
+
+#notice-text {
+    font-size: 15px;
+}
+
+#message {
+    margin: 8px;
+}
+
+.form-control {
+    border-left: none;
+}
+
+.input-group-text {
+    background-color: #fff;
+}
+
+.input-group {
+    padding: 5px 15px;
+    background-color: #cccccc;
 }

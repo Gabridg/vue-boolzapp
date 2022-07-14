@@ -30,14 +30,27 @@
                         <h4 class="profile-name"></h4>
                     </div>
                     <div id="user-interaction">
-                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-circle-notch color-secondary"></i>
                         <i class="fa-solid fa-message"></i>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
                 <div id="view-main">
-                    <div id="message-notice">
-                        <i class="fa-solid fa-bell-slash rounded-circle"></i>
+                    <div id="message-notice" class="d-flex align-items-center">
+                        <div id="ring-bell">
+                            <i class="fa-solid fa-bell-slash rounded-circle"></i>
+                        </div>
+                        <div id="message">
+                            <h4 id="notice-text">Ricevi notifiche di nuovi messaggi</h4>
+                            <a href="">Attiva notifiche dekstop</a>
+                        </div>
+                    </div>
+                    <div id="user-contact">
+                        <div class="input-group">
+                            <div class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <input type="text" class="form-control" placeholder="cerca tra i contatti..">
+                        </div>
+                        <div class="contact-list"></div>
                     </div>
                 </div>
             </div>
