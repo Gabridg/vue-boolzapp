@@ -183,3 +183,7 @@ a {
     color: #aaa;
     font-size: 10px;
 }
+
+.chat-box p {
+    margin-bottom: 5px;
+}
