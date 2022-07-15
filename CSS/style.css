@@ -101,6 +101,7 @@ a {
     padding-left: 10px;
     padding-top: 20px;
     border: 1px solid #eaeaea;
+    cursor: pointer;
 }
 
 .contact img {
@@ -132,7 +133,8 @@ a {
 }
 
 #chat {
-    height: 78vh;
+    height: 80vh;
+    overflow-y: scroll;
 }
 
 #mic {
@@ -144,10 +146,8 @@ a {
 }
 
 .chat-mex {
-    height: 57px;
+    height: 55px;
 }
-
-.chat-view {}
 
 .chat-box {
     display: flex;
