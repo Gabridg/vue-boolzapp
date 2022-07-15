@@ -52,7 +52,8 @@
                             <input type="text" class="form-control" placeholder="cerca tra i contatti..">
                         </div>
                         <div class="contact-list">
-                            <div v-for="(contact, index) in contacts" class="contact d-flex">
+                            <div v-for="(contact, index) in contacts" class="contact d-flex"
+                                @click="currentIndex = index">
                                 <img :src=`img/avatar${contact.avatar}.jpg` :alt="contact.name"
                                     class="rounded-circle img-fluid">
                                 <h4 v-text="contact.name" class="fs-5 ps-1"></h4>
@@ -64,7 +65,7 @@
             <div id="user-messages">
                 <div id="message-header" class="d-flex justify-content-between align-items-center">
                     <div id="user-name" class="d-flex align-items-center">
-                        <img :src=`img/avatar${contacts[0].avatar}.jpg` :alt="contacts[0].avatar"
+                        <img :src=`img/avatar${contacts[currentIndex].avatar}.jpg` :alt="contacts[currentIndex].avatar"
                             class="rounded-circle img-fluid" />
                         <div class="contact-info ps-1">
                             <h4 v-text="user.name" class="fs-5"></h4>
@@ -95,7 +96,6 @@
                         <div class="input-group-text"><i class="fa-solid fa-face-smile"></i></div>
                         <input type="text" class="form-control" placeholder="scrivi un messaggio..">
                         <div class="input-group-text" id="mic"><i class="fa-solid fa-microphone"></i></div>
-
                     </div>
                 </div>
         </main>
