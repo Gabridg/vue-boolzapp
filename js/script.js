@@ -29,6 +29,7 @@ const data = new Vue({
             name: 'Nome Utente',
             avatar: '_io'
         },
+        newMex: '',
         contacts: [
             {
                 name: 'Michele',
@@ -112,7 +113,13 @@ const data = new Vue({
         ]
     },
     methods: {
-
+        addMex() {
+            if (this.newMex) {
+                const newObj = { date: '10/01/2020 16:50:00', text: this.newMex, status: 'sent' };
+                this.contacts.messages.push(newObj);
+                this.newMex = '';
+            }
+        }
     }
 })
 
