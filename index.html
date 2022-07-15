@@ -80,14 +80,11 @@
                 <div id="message-view">
                     <div id="chat">
                         <ul class="list-unstyled pt-3">
-                            <li :class="`chat-box ${contacts[0].messages[1].status}`">
+                            <li v-for="(message,index) in contacts[currentIndex].messages"
+                                :class="`chat-box ${message.status}`">
                                 <div class=" message-content">
-                                    <p v-text="contacts[0].messages[1].text" class="p-0"></p>
-                                    <time v-text="contacts[0].messages[1].date"></time>
-                                </div>
-                            </li>
-                            <li class="chat-box recived">
-                                <div class="message-content">
+                                    <p v-text="message.text"></p>
+                                    <time v-text="message.date"></time>
                                 </div>
                             </li>
                         </ul>
