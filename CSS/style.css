@@ -100,6 +100,7 @@ a {
     width: 100%;
     padding-left: 10px;
     padding-top: 20px;
+    border: 1px solid #eaeaea;
 }
 
 .contact img {
@@ -131,7 +132,7 @@ a {
 }
 
 #chat {
-    height: 80vh;
+    height: 78vh;
 }
 
 #mic {
@@ -143,5 +144,13 @@ a {
 }
 
 .chat-mex {
-    height: 55px;
+    height: 57px;
+}
+
+.recived {
+    background-color: #fff;
+}
+
+.sent {
+    background-color: #d5f9ba;
 }

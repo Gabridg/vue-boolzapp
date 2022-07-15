@@ -27,7 +27,7 @@
             <div id="user-view">
                 <div id="view-header" class="d-flex justify-content-between align-items-center">
                     <div id="user-name" class="d-flex align-items-center">
-                        <img src="img/avatar_1.jpg" :alt="user.avatar" class="rounded-circle img-fluid" />
+                        <img :src=`img/avatar${user.avatar}.jpg` :alt="user.name" class="rounded-circle img-fluid" />
                         <h4 v-text="user.name"></h4>
                     </div>
                     <div id="user-interaction">
@@ -53,7 +53,8 @@
                         </div>
                         <div class="contact-list">
                             <div v-for="contact in contacts" class="contact d-flex">
-                                <img :src="contact.avatar" alt="" class="rounded-circle img-fluid">
+                                <img :src=`img/avatar${contact.avatar}.jpg` :alt="contact.name"
+                                    class="rounded-circle img-fluid">
                                 <h4 v-text="contact.name" class="fs-5 ps-1"></h4>
                             </div>
                         </div>
@@ -77,6 +78,15 @@
                 </div>
                 <div id="message-view">
                     <div id="chat">
+                        <ul class="">
+                            <li class="sent">
+                                <p>Hai portato giù il cane e fatto la spesa?</p>
+
+                            </li>
+                            <li class="recived">
+                                <p>Tutto fatto!</p>
+                            </li>
+                        </ul>
 
                     </div>
 

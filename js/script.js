@@ -28,19 +28,19 @@ const data = new Vue({
         contacts: [
             {
                 name: 'Michele',
-                avatar: 'img/avatar_1.jpg',
+                avatar: '_1',
             },
             {
                 name: 'Fabio',
-                avatar: 'img/avatar_2.jpg',
+                avatar: '_2',
             },
             {
                 name: 'Samuele',
-                avatar: 'img/avatar_3.jpg',
+                avatar: '_3',
             },
             {
                 name: 'Luisa',
-                avatar: 'img/avatar_4.jpg',
+                avatar: '_4',
             },
         ]
     }
