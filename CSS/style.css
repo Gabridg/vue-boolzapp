@@ -147,10 +147,39 @@ a {
     height: 57px;
 }
 
-.recived {
-    background-color: #fff;
+.chat-view {}
+
+.chat-box {
+    display: flex;
 }
 
-.sent {
+.chat-box.recived {
+    justify-content: flex-start;
+}
+
+.message-content {
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin: 15px 10px;
+}
+
+.recived .message-content {
+    background-color: #fff;
+
+}
+
+.sent .message-content {
     background-color: #d5f9ba;
+
+}
+
+.chat-box.sent {
+    justify-content: flex-end;
+}
+
+.chat-box time {
+    display: block;
+    text-align: right;
+    color: #aaa;
+    font-size: 10px;
 }
