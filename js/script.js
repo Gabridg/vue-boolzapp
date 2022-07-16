@@ -114,17 +114,15 @@ const data = new Vue({
         ]
     },
     methods: {
-        replyTime() {
-            setTimeout(addMex(), 3000)
-        },
-
         addMex() {
             if (this.newMex) {
                 const newObj = { date: '10/01/2020 16:50:00', text: this.newMex, status: 'sent' };
                 this.contacts[this.currentIndex].messages.push(newObj);
                 this.newMex = '';
             }
-            return this.contacts[this.currentIndex].messages.push(this.reply)
+            setTimeout(() => {
+                this.contacts[this.currentIndex].messages.push(this.reply)
+            }, 3000);
         }
     }
 })
