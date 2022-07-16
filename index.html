@@ -94,8 +94,8 @@
 
                     <div class="input-group chat-mex">
                         <div class="input-group-text"><i class="fa-solid fa-face-smile"></i></div>
-                        <input v-model="newMex" type="text" class="form-control" placeholder="scrivi un messaggio.."
-                            @keyup.enter="addMex">
+                        <input v-model.trim="newMex" type="text" class="form-control"
+                            placeholder="scrivi un messaggio.." @keyup.enter="addMex">
                         <div class="input-group-text" id="mic"><i class="fa-solid fa-microphone"></i></div>
                     </div>
                 </div>
