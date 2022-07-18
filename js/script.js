@@ -27,6 +27,7 @@ Cerchiamo di rispettare tutti i principi e le best practices viste finora (nomi 
 const data = new Vue({
     el: '#root',
     data: {
+        isTextShow: false,
         searchText: '',
         currentIndex: 0,
         user: {
@@ -141,11 +142,17 @@ const data = new Vue({
                 } else {
                     contact.visible = false;
                 }
-
                 return contact;
             });
-
             this.contacts = visibleContacts;
-        }
+        },
+        deleteMex(index) {
+            this.contacts[this.currentIndex].messages.splice(index, 1);
+        },
     }
 });
+
+
+
+
+

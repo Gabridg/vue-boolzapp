@@ -89,8 +89,14 @@
                             <li v-for="(message,index) in contacts[currentIndex].messages"
                                 :class="`chat-box ${message.status}`">
                                 <div class=" message-content">
-                                    <p v-text="message.text"></p>
-                                    <time v-text="message.date"></time>
+                                    <div class="text-content">
+                                        <i class="fa-solid fa-angle-down" @click="isTextShow = !isTextShow"></i>
+                                        <p v-text="message.text"></p>
+                                        <time v-text="message.date"></time>
+                                        <div id="delete-button" :class="isTextShow ? 'show-on' : 'show-off'">
+                                            <p @click="deleteMex">Elimina messaggio</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                         </ul>

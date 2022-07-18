@@ -157,18 +157,18 @@ a {
     justify-content: flex-start;
 }
 
-.message-content {
+.text-content {
     padding: 10px 5px;
     border-radius: 10px;
     margin: 15px 10px;
 }
 
-.received .message-content {
+.received .text-content {
     background-color: #fff;
 
 }
 
-.sent .message-content {
+.sent .text-content {
     background-color: #d5f9ba;
 
 }
@@ -186,4 +186,32 @@ a {
 
 .chat-box p {
     margin-bottom: 5px;
+}
+
+.chat-box .fa-solid {
+    display: none;
+}
+
+.text-content:hover .fa-solid {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+}
+
+.chat-box #delete-button {
+    background-color: #fff;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    bottom: 220px;
+    text-align: center;
+}
+
+.chat-box #delete-button.show-off {
+    display: none;
+}
+
+.chat-box #delete-button.show-on {
+    display: block;
 }
