@@ -27,6 +27,7 @@ Cerchiamo di rispettare tutti i principi e le best practices viste finora (nomi 
 const data = new Vue({
     el: '#root',
     data: {
+        searchText: '',
         currentIndex: 0,
         user: {
             name: 'Nome Utente',
@@ -131,7 +132,20 @@ const data = new Vue({
         },
         replyDelay() {
             setTimeout(() => this.addText('ok', 'received'), 3000);
+        },
+        searchContacts() {
+            const search = this.searchText.toLowerCase();
+            const visibleContacts = this.contacts.map((contact) => {
+                if (contact.name.toLowerCase().includes(search)) {
+                    contact.visible = true;
+                } else {
+                    contact.visible = false;
+                }
 
+                return contact;
+            });
+
+            this.contacts = visibleContacts;
         }
     }
 });

@@ -53,11 +53,12 @@
                     <div id="user-contact">
                         <div class="input-group">
                             <div class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></div>
-                            <input type="text" class="form-control" placeholder="cerca tra i contatti..">
+                            <input type="text" class="form-control" placeholder="cerca tra i contatti.."
+                                v-model.trim="searchText" @keyup="searchContacts">
                         </div>
                         <div class="contact-list">
                             <div v-for="(contact, index) in contacts" class="contact d-flex"
-                                @click="currentIndex = index">
+                                @click="currentIndex = index" v-if="contact.visible">
                                 <img :src=`img/avatar${contact.avatar}.jpg` :alt="contact.name"
                                     class="rounded-circle img-fluid">
                                 <h4 v-text="contact.name" class="fs-5 ps-1"></h4>
